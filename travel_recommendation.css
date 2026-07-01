@@ -1,0 +1,245 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('venice.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: #131212;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background-color: rgba(135, 112, 112, 0.7);
+    }
+   nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:  #FFD700; /* default white */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #1525d1; /* changes to blue on hover */
+}
+
+    .search-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #11315d;
+      border-radius: 4px;
+      padding: 4px;
+    }
+    .search-box input {
+      border: 5px solid #fafbfc;
+      outline: none;
+     
+      flex: 1;
+      gap: 10px;
+      margin-right: 10px;
+      
+    }
+    .search-box button {
+      background: rgb(40, 158, 32);;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 4px;
+      gap: 30px;
+      padding: 10px;
+      border-radius: 4px;
+    margin-left: 10px; 
+    }
+    .search-box svg {
+      width: 10px;
+      height: 10px;
+
+      stroke: #c9d0c3;
+    }
+ .hero {
+  text-align: center;
+  padding: 120px 20px;
+  background-color: rgba(0,0,0,0.5); /* overlay for readability */
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FFD700; /* golden highlight */
+}
+
+.hero p {
+  font-size: 1.3em;
+  max-width: 700px;
+    font-weight: bold;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* Book Now button */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFC107);
+  color: #333;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px; /* pill shape */
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #FFC107, #FFA000);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; /* 👈 stack items vertically */
+  align-items: center;    /* center them horizontally */
+  gap: 15px;              /* space between icons */
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1525d1;
+}
+
+
+
+    /* Page content */
+    .about-section {
+      text-align: center;
+      padding: 60px 20px;
+      
+    }
+
+    .about-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    .about-section p {
+      font-size: 1 em;
+      font-weight: bold;
+        color: #fff;
+    }
+
+    /* Team section */
+    .team-section {
+      padding: 20px 20px;
+      
+      text-align: center;
+      
+      align-items: center;
+    }
+
+    .team-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #1525d1;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .member p {
+      margin: 0;
+      color: #666;
+    }
+    
+
+    /* Contact form */
+    .contact-section {
+      max-width: 600px;
+      margin: 60px auto;
+     
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      color: #1525d1;
+      margin-bottom: 20px;
+    }
+
+    .contact-section label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .contact-section textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-section button {
+      display: block;
+      width: 100%;
+      background-color: #FFD700;
+      color: #333;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .contact-section button:hover {
+      background-color: #FFC107;
+      transform: translateY(-2px);
+    }
+  
